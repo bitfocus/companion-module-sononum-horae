@@ -73,7 +73,7 @@ instance.prototype.action = function(action) {
 		'arm':  '/horae/arm',
 	};
 
-  if (osc[id] !== undefined) {
+	if (osc[id] !== undefined) {
 		debug('sending', osc[id], "to", self.config.host);
 		self.system.emit('osc_send', self.config.host, self.config.port, osc[id], [{
 			type: "f",
@@ -82,12 +82,6 @@ instance.prototype.action = function(action) {
 	}
 
 
-};
-
-instance.module_info = {
-	label: 'Horae OSC',
-	id: 'Horae',
-	version: '0.0.1'
 };
 
 instance_skel.extendedBy(instance);
