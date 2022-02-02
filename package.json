@@ -18,5 +18,13 @@
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"author": "Daniel Richert <daniel.richert@svv.fi>",
-	"license": "MIT"
+	"license": "MIT",
+	"homepage": "https://github.com/bitfocus/companion-module-sononum-horae#readme",
+	"bugs": {
+		"url": "https://github.com/bitfocus/companion-module-sononum-horae/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bitfocus/companion-module-sononum-horae.git"
+	}
 }
