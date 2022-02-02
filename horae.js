@@ -56,7 +56,7 @@ instance.prototype.destroy = function() {
 
 instance.prototype.actions = function(system) {
 	var self = this;
-	self.system.emit('instance_actions', self.id, {
+	self.setActions({
 		'play': { label: 'Start' },
 		'stop': { label: 'Stop' },
 		'arm':  { label: 'Arm' },
@@ -75,7 +75,7 @@ instance.prototype.action = function(action) {
 
 	if (osc[id] !== undefined) {
 		debug('sending', osc[id], "to", self.config.host);
-		self.system.emit('osc_send', self.config.host, self.config.port, osc[id], [{
+		self.oscSend(self.config.host, self.config.port, osc[id], [{
 			type: "f",
 			value: 1
 		}])
